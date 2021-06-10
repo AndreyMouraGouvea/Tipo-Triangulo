@@ -4,7 +4,6 @@ function funcao(){
   var v2 = parseInt(document.getElementById("v2").value);
   var v3 = parseInt(document.getElementById("v3").value);
  
-
   // let img = document.createElement('img')
   // img.src = "https://doutormultas.com.br/wp-content/uploads/2017/11/cnh-provisoria-pode-dirigir-em-rodovias-conheca-as-regras.jpg";
   // img.style = " width: 100vw";
@@ -45,8 +44,9 @@ function funcao(){
       navigator.notification.alert("O triângulo é escaleno", null, "Tipo:", "Ok");
     }
   }else{
+    navigator.vibrate(2000);
     navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
   }
 }
-// https://www.clubedohardware.com.br/topic/1249858-programa-que-identifica-triangulos-e-calcula-seus-angulos/
+//https://www.clubedohardware.com.br/topic/1249858-programa-que-identifica-triangulos-e-calcula-seus-angulos/
 
