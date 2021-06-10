@@ -14,25 +14,36 @@ function funcao(){
   // img2.style = "width: 100vw";
   
   // equilatero
-  if(v1 == v2 && v2 == v3){
-    navigator.notification.alert("O triângulo é equilátero!", null, "Tipo:", "Ok");
-    // document.write("<h1 style='display: flex;justify-content: center; margin-top: 5vh;'>O triângulo é equilátero!</h1><br>");
-    // location.reload();
+  // if(v1 == v2 && v2 == v3){
+  //   navigator.notification.alert("O triângulo é equilátero!", null, "Tipo:", "Ok");
+  //   // document.write("<h1 style='display: flex;justify-content: center; margin-top: 5vh;'>O triângulo é equilátero!</h1><br>");
+  //   // location.reload();
 
-  }else if (v1 == v2 || v2 == v3){
-    navigator.notification.alert("O triângulo é isósceles!", null, "Tipo:", "Ok");
-    // document.write("<h1 style='display: flex;justify-content: center; margin-top: 5vh;'>O triângulo é isósceles!</h1><br>");
-    // location.reload();
-  }else if(v1 != v2 && v2 != v3 || v1 != null && v2 != null && v3 != null){
-    navigator.notification.alert("O triângulo é escaleno", null, "Tipo:", "Ok");
-    // document.write("<h1 style='display: flex;justify-content: center; margin-top: 5vh;'>O triângulo é escaleno!</h1><br>");
-    // location.reload();
-  }else if(v1 == NaN || v2 == NaN || v3 == NaN){
-    // caso valores sejam inválidos.
-     navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
-    // https://github.com/AndreyMouraGouvea/PluginsCordova/blob/master/www/components/plugins.js
-    // https://github.com/AndreyMouraGouvea/Tabuada-Mobile/blob/master/www/components/plugins.js
-    // https://github.com/AndreyMouraGouvea/CalculadoraCompletaMobile/blob/master/www/components/acao.js
+  // }else if (v1 == v2 || v2 == v3){
+  //   navigator.notification.alert("O triângulo é isósceles!", null, "Tipo:", "Ok");
+  //   // document.write("<h1 style='display: flex;justify-content: center; margin-top: 5vh;'>O triângulo é isósceles!</h1><br>");
+  //   // location.reload();
+  // }else if(v1 != v2 && v2 != v3 || v1 != null && v2 != null && v3 != null){
+  //   navigator.notification.alert("O triângulo é escaleno", null, "Tipo:", "Ok");
+  //   // document.write("<h1 style='display: flex;justify-content: center; margin-top: 5vh;'>O triângulo é escaleno!</h1><br>");
+  //   // location.reload();
+  // }else if(v1 == NaN || v2 == NaN || v3 == NaN){
+  //   // caso valores sejam inválidos.
+  //    navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
+  //   // https://github.com/AndreyMouraGouvea/PluginsCordova/blob/master/www/components/plugins.js
+  //   // https://github.com/AndreyMouraGouvea/Tabuada-Mobile/blob/master/www/components/plugins.js
+  //   // https://github.com/AndreyMouraGouvea/CalculadoraCompletaMobile/blob/master/www/components/acao.js
+  // }else{
+  //   navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
+  // }
+  if(v1 + v2 && v1 + v3 >= v2 && v2 + v3 >= v1){
+    if(v1 == v2 && v2 == v3 && v3 == v1){
+      navigator.notification.alert("O triângulo é equilátero!", null, "Tipo:", "Ok");
+    }else if(v1 == v2 || v2 == v3 || v3 == v1){
+      navigator.notification.alert("O triângulo é isósceles!", null, "Tipo:", "Ok");
+    }else if(v1 != v2 && v2 != v3 && v3 != v1){
+      navigator.notification.alert("O triângulo é escaleno", null, "Tipo:", "Ok");
+    }
   }else{
     navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
   }
