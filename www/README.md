@@ -1,5 +1,6 @@
 # Tipo de Triângulo -  Isósceles, Equilátero, Escaleno.
 
+```
 function funcao(){
 
   var v1 = parseInt(document.getElementById("v1").value);
@@ -18,3 +19,4 @@ if(v1 + v2 && v1 + v3 >= v2 && v2 + v3 >= v1){
     navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
   }
 }
+```
