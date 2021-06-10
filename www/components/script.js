@@ -48,4 +48,5 @@ function funcao(){
     navigator.notification.alert("Os valores digitados são inválidos!", null, "Aviso!", "Ok");
   }
 }
+// https://www.clubedohardware.com.br/topic/1249858-programa-que-identifica-triangulos-e-calcula-seus-angulos/
 
